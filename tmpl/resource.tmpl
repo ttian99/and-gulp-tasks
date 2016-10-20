@@ -1,0 +1,13 @@
+var res = <%= resList %>;
+
+var resIn = <%= resInList %>;
+
+var g_resources = [];
+<%= preloads %>.forEach(function(group) {
+  var resGroup = res[group];
+  for (var i in resGroup) {
+    g_resources.push(resGroup[i]);
+  }
+});
+
+var g_groupPriorities = <%= priorities %>;

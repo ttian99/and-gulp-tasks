@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title><%= title %></title>
+  <link href="bower_components/semantic-ui/dist/semantic.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="bower_components/semantic-ui/dist/semantic.js"></script>
+</head>
+
+<body>
+  <h1 class="ui header center aligned"><%= title %></h1>
+  <div id="web" class="ui container">
+    <div class="ui segment">
+      <h3 class="ui header">Web</h3>
+      <button class="ui button" href="../../index.html">Web Debug</button>
+      <button class="ui button" href="../../publish/html5/index.html">Web Release</button>
+    </div>
+  </div>
+
+  <div id="runtime" class="ui container">
+    <div class="ui segment">
+      <h3 class="ui header">Runtime</h3>
+      <button class="ui button" href="../../frameworks/runtime-tools/package-creator/out/for-qqbrowser.html">qq-browser</button>
+      <button class="ui button" href="../../frameworks/runtime-tools/package-creator/out/for-baidu.html">baidu-browser</button>
+    </div>
+  </div>
+
+  <script>
+    $('button').click(function() {
+      location.href = $(this).attr("href");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "run-web",
+  "version": "0.0.0",
+  "main": "run-web.html",
+  "authors": [
+    "builden"
+  ],
+  "license": "MIT",
+  "homepage": "run-web.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "semantic-ui": "~2.0.8"
+  }
+}
